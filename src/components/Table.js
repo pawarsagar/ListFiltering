@@ -85,6 +85,12 @@ export class Table extends React.Component {
     })
   }
 
+buy(e){
+
+  alert("this is buy");
+}
+
+
   sortRevAlpha() {
     function compare(elem1, elem2) {
       let cmp = 0;
@@ -104,7 +110,7 @@ export class Table extends React.Component {
   }
   render() {
     return (
-      <TablePresentation inputData={this.state.inputData} myShop={this.state.myShop} sortAlpha={this.sortAlpha} sortRevAlpha={this.sortRevAlpha} sortPrice={this.sortPrice} sortRevPrice={this.sortRevPrice}/>
+      <TablePresentation buy={this.buy} inputData={this.state.inputData} myShop={this.state.myShop} sortAlpha={this.sortAlpha} sortRevAlpha={this.sortRevAlpha} sortPrice={this.sortPrice} sortRevPrice={this.sortRevPrice}/>
     )
   }
 }
